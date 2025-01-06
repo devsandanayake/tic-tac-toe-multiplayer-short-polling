@@ -217,7 +217,7 @@ async function joinPrivateRoom(req, res, next) {
   const newRoomId = req.params.roomId;
 
   //check if a room is already assigned to the client
-  const sessionGameData = req.session.gameData;
+  const sessionGameData = req.params.roomId;
   let roomId;
   if (sessionGameData) {
     roomId = sessionGameData.roomId;

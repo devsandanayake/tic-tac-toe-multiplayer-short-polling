@@ -24,7 +24,7 @@ async function getGameInvitation(req, res, next) {
   const roomId = req.params.roomId;
 
   //game session data
-  const sessionGameData = req.session.gameData;
+  const sessionGameData = req.params.roomId;
 
   let room;
   try {
