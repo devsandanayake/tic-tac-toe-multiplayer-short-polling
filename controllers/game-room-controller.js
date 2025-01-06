@@ -277,10 +277,10 @@ async function joinPrivateRoom(req, res, next) {
   }
 
   //map the client to the saved room by its session
-  sessionUtil.saveGameSession(req, {
-    roomId: room.roomId,
-    playerNumber: playerNumber,
-  });
+  // sessionUtil.saveGameSession(req, {
+  //   roomId: room.roomId,
+  //   playerNumber: playerNumber,
+  // });
 
   //block the room the client was already assigned to, so that no other players
   //will be able to join this room even if it still results available
